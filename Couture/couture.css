@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'chantelli_antiquaregular';
+    src: url('Chantelli_Antiqua-webfont.eot');
+    src: url('Chantelli_Antiqua-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Chantelli_Antiqua-webfont.woff2') format('woff2'),
+         url('Chantelli_Antiqua-webfont.woff') format('woff'),
+         url('Chantelli_Antiqua-webfont.ttf') format('truetype'),
+         url('Chantelli_Antiqua-webfont.svg#chantelli_antiquaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lillyregular';
+    src: url('Lilly__-webfont.eot');
+    src: url('Lilly__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Lilly__-webfont.woff2') format('woff2'),
+         url('Lilly__-webfont.woff') format('woff'),
+         url('Lilly__-webfont.ttf') format('truetype'),
+         url('Lilly__-webfont.svg#lillyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  width : 900px;
+  margin-right:auto;
+  margin-left:auto;
+  background-image: url("fond_texture.png");
+}
+
+header {
+    background-image: url("banniere.jpg");
+    background-repeat: no-repeat; 
+    height : 250px;
+    position : relative;
+    border-radius:20px;
+}
+
+header h1{
+    font-family:"chantelli_antiquaregular";
+    font-size:160px;
+    font-weight:normal;
+    text-align:center;
+    color:#fcf9e2;
+    text-shadow: 5px 3px rgb(255, 192, 203);
+    margin:0;
+    padding-top: 20px;
+}
+
+header div.info{
+    font-family:"lillyregular";
+    font-weight:bold;
+    background-color: rgba(100, 0, 0, 0.6);
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
+    border: 1px rgb(085, 022, 033);
+}
+
+p.dedicace{
+    color:white;
+    font-style: italic;
+    font-size:17px;
+    text-shadow: 1px 1px rgb(255, 192, 203);
+    text-align :left;
+    margin: 20px;
+}
+
+.news a{
+    position: absolute;
+    right: 30px;
+    top : 5px;
+    color:white;
+    text-decoration:none;
+    text-shadow: 2x 2px black;
+    border :2px rgb(085, 022, 033) ;
+    padding: 3px 3px 5px;
+    border-radius: 10px;
+    background:linear-gradient(rgb(255, 192, 203),rgb(155, 092, 103));
+    border:  2px solid rgb(085, 022, 033);
+}
+
+.news a:hover{
+    background:linear-gradient(rgb(255, 255, 255),rgb(255, 192, 203));
+    text-shadow: 1px 1px black;    
+}
+
+nav ul{
+    background-color: rgba(100, 0, 0, 0.6);
+    text-align: center;
+    margin: 5% 0;
+    padding: 10px 5px 0 5px;
+    border-radius: 20px;
+    list-style-type: none;
+}
+
+nav li{
+   font-size: 50px;
+   font-family:"chantelli_antiquaregular";
+   display: inline;
+   margin: 30px;
+   padding: 10px 5px 0 5px;
+   border-width: 5px;
+   border-color: rgb(085, 022, 033);
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(255, 192, 203);
+    text-shadow: 1px 1px white;
+}
+
+nav li a:hover{
+    background:linear-gradient(rgb(255, 255, 255),rgb(255, 192, 203));
+    text-shadow: 1px 1px black;
+}
+
+aside {
+    float: left;
+    text-align : center;
+    font-family:"lillyregular";
+    width : 300px;
+    margin-bottom: 100px;
+    padding: 10px;
+    border : 2px solid rgb(085, 022, 033);
+    border-radius: 20px;
+    background-color: rgba(100, 0, 0, 0.6);
+    font-size: 14px;
+    color : white;
+    text-shadow: 2px 2px black;
+}
+
+aside h2 {
+    font-size: 30px;
+    font-family:"lillyregular";
+    margin: 0px;
+}
+
+aside img {
+    border: 3px solid rgb(085, 022, 033);
+}
+
+aside ul {
+    text-align : left;
+    border : 3px dashed ; 
+    color : white;
+    text-shadow: 2px 2px black;
+    list-style-image: url("fleche.png");
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top : 5px;
+    padding-bottom: 5px;
+}
+
+section {
+    float: right;
+    font-family:"lillyregular";
+    font-size: 14px;
+    width : 525px;
+    margin-bottom: 100px;
+    padding: 10px;
+    border : 2px solid rgb(085, 022, 033);
+    border-radius: 20px;
+    text-align: justify;
+    background : linear-gradient(rgba(255, 192, 203, 0.6),rgba(100, 0, 0, 0.6));
+    color: white;
+}
+
+section h2 {
+    border-bottom: 1px white  solid;
+    font-size: 30px;
+    font-family:"lillyregular";
+    color : white;
+    text-shadow: 2px 2px black;
+    margin: 0px;
+}
+
+footer {
+    position: fixed;
+    left :0;
+    bottom: 0;
+    width: 100%;
+    font-family:"lillyregular";
+    color: white;
+    text-align: center;
+    background-color:rgb(085, 022, 033);
+    font-size: small;
+    padding: 5px 0px;
+    
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
